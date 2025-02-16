@@ -153,7 +153,7 @@ const Post = ({ post }) => {
       <b>Price($) : {post.price}</b><br />
       <p style={{ width: "150px", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis" }}>{post.description}</p><br />
 
-      <img src={post.img[0]} width={50} />
+      <img src={`api/proxy?url=${post.img[0]}`} width={50} />
 
       <div className="pt-5">
         <button

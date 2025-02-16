@@ -121,8 +121,8 @@ const page = () => {
                                                         <td className="py-4">
                                                             <div className="flex items-center">
                                                                 <img 
-                                                                    className="h-16 w-16 mr-4 imageMob"
-                                                                    src={temp.img[0]}
+                                                                    className="h-16 w-16 mr-4 imageMob" 
+                                                                    src={`api/proxy?url=${temp.img[0]}`}
                                                                     alt="Product image"
                                                                 />
                                                                 <span className="font-semibold">{temp.title}</span>
